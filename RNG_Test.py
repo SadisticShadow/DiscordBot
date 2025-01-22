@@ -11,6 +11,7 @@ die = input()
 check = 0
 numcheck = 0
 
+#this loop should check for what the user wants to roll or flip dice-wise.
 while check == 0:
     if die == "coin" or die == "Coin":
         check = 1
@@ -55,7 +56,8 @@ while check == 0:
     else:
         print("Please type a valid response from the list.")
         die = input()
-     
+
+#These variables are just declared here for use in the next section for what the results will be and for i to be reused in the for loops.    
 i = 0
 result = ""
 
@@ -63,6 +65,7 @@ print("Would you like the total combined value (doesn't work for coins)? Yes/No"
 
 choice = input()
 
+#This if statement is just a check for if the user wants a total of the combined dice rolls or not. A yes will only display the total. It will also print the values of the rolls/total.
 if choice == "yes" or choice == "Yes" or choice == "y" or choice == "Y" or choice == "YES" or choice == "YEs" or choice == "YeS" or choice == "yES" or choice == "yeS":
     total = 0
     for i in range(num):
